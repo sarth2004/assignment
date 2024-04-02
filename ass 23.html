@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Number to Words Converter</title>
+</head>
+<body>
+
+<h1>Number to Words Converter</h1>
+
+<script>
+  let userInput = prompt("Enter a number between 0 and 9:");
+  
+  let number = parseInt(userInput);
+  let numberInWords="number";
+  switch (number) {
+    case 0:
+      document.write = "Zero";
+      break;
+    case 1:
+      document.write = "One";
+      break;
+    case 2:
+      document.write = "Two";
+      break;
+    case 3:
+      document.write = "Three";
+      break;
+    case 4:
+      document.write = "Four";
+      break;
+    case 5:
+      document.write = "Five";
+      break;
+    case 6:
+      document.write = "Six";
+      break;
+    case 7:
+      document.write = "Seven";
+      break;
+    case 8:
+      document.write = "Eight";
+      break;
+    case 9:
+      document.write = "Nine";
+      break;
+    default:
+      document.write = "Invalid number";
+  }
+  alert(`Number in words: ${document.write}`);
+  
+</script>
+
+</body>
+</html>
