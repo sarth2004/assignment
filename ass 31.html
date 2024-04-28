@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>product preview card</title>
+    <style>
+        #main-product-image{
+            width: 400px;
+            height: 400px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 20px;
+            margin: 20px auto;
+            display: block;
+        }
+        .product-image{
+            height: 70px;
+            width: 70px;
+            object-fit: cover;
+            border: 1px solid black;
+            border-radius: 5px;
+            margin: 10px;
+            cursor: pointer;
+        }
+        .product-images-container
+        {
+            display: flex;
+            justify-content: center;
+        }
+        
+    </style>
 </head>
 <body>
-    
+    <img src="1.jpg" id="main-product-image" alt="">
+    <div class="product-images-container">
+        <img src="1.jpg" class="product-image" alt="">
+        <img src="2.jpg" class="product-image"    alt="">
+        <img src="3.jpg" class="product-image" alt="">
+        <img src="4.jpg" class="product-image" alt="">
+
+    </div>
 </body>
 </html>
