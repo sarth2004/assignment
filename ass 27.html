@@ -11,7 +11,11 @@
             background-color: #fff;
             color: #000;
         }
+         .container{
+            display: block;
+            justify-content: center;
 
+         }
         .dark-mode {
             background-color: #333;
             color: #fff;
@@ -29,30 +33,25 @@
     </style>
 </head>
 <body>
-    <header class="header">
-        <h1>Dark/Light Theme Switcher</h1>
-        
-    </header>
-    <div class="btn">
-    <button id="theme-toggle" >Change theme mode</button>
-</div>
-    <div class="content">
-        <p>This is a theme changer</p>
+    <div class="container">
+        <header class="header">
+            <h1>Dark/Light Theme Switcher</h1>
+            
+        </header>
+        <div class="btn">
+        <button id="theme-toggle">Change theme mode</button>
+    </div>
+        <div class="content">
+            <p>This is a theme changer</p>
+        </div>
     </div>
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             const themeToggle = document.getElementById("theme-toggle");
             const body = document.body;
-            const currentTheme = localStorage.getItem("theme");
-
-            if (currentTheme === "dark-mode") {
-                body.classList.add("dark-mode");
-            }
 
             themeToggle.addEventListener("click", function() {
                 body.classList.toggle("dark-mode");
-                const currentTheme = body.classList.contains("dark-mode") ? "dark-mode" : "light-mode";
-                localStorage.setItem("theme", currentTheme);
             });
         });
     </script>
